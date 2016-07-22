@@ -1,0 +1,54 @@
+<form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="username">登录名</label>
+    <div class="controls">
+      <input type="text" id="username" placeholder="username">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="password">密码</label>
+    <div class="controls">
+      <input type="password" id="password" placeholder="">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="nickname">昵称</label>
+    <div class="controls">
+      <input type="text" id="nickname" placeholder="nickname">
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <button type="button" class="btn" id="tologin">去登录</button>
+      <button type="button" class="btn btn-inverse offset1" id="reg">注册</button>
+    </div>
+  </div>
+</form>
+
+
+<script type="text/javascript"> 
+$(function(){
+	$('#tologin').click(function(){
+		$.post('?r=user/tologin',function(data){
+			$('#left-content').html(data);
+		});
+	});
+});
+
+
+$('#reg').click(function(){
+	var username = $('#username').val();
+	var password = $('#password').val();
+	var nickname = $('#nickname').val();
+	if(''===username || ''===password || ''===nickname) return false;
+	var params = {'username':username, 'password':password, 'nickname':nickname};
+	$.post('?r=user/reg', params, function(json){
+		alert(json.msg);
+		if('success'===json.code){
+			location.href='./';
+		}
+	}, 'json');
+});
+
+
+</script>

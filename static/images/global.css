@@ -1,0 +1,133 @@
+@charset "utf-8";
+/*!
+ * FileName   : global.css
+ * WebSite    :
+ * Desc       :
+ * Author     : Max
+ * Version    : 1.0.0_beta
+ * LastChange : 2012-02-29T13:48:31
+ * */
+@import url(reset.min.css);
+@import url(common.min.css);
+/*
+  基本
+*/
+html,body{height:100%;}
+body{font:12px/1.5 tahoma,\5fae\8f6f\96c5\9ed1;color:#333;background:url(aside.png) repeat-y -10px 0;}
+a{color:#0F87CC;}
+a:hover{color:#F70;}
+/*
+ 通用
+*/
+textarea{padding:5px;width:98%;line-height:24px;vertical-align:top;border:1px #ccc inset;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;color:#666;text-align:left;}
+input{height:23px;line-height:23px;background:#fff;color:#333;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;margin:0 3px;padding:0 3px;}
+input[type="text"]{border:1px solid #ccc;}
+input.xxl{width:800px;}
+input.xl{width:480px;}
+input.l{width:240px;}
+input.m{width:120px;}
+input.s{width:50px;}
+input.xs{width:25px;}
+button{height:25px;line-height:1;margin-right:10px;}
+select{padding:2px;}
+.vab button,
+.vab input{vertical-align:bottom;}
+.bdb{border-bottom:1px solid #ddd;padding:0 10px 5px 10px;}
+.bda{border:1px solid #ddd;padding:20px;}
+.lhl{line-height:30px;}
+.amrm a{margin-right:10px;}
+
+table caption{height:30px;line-height:30px;background:#e6f2fe;border:1px solid #ddd;padding:0 10px;text-align:center;font-weight:700;}
+th{font-weight:700;}
+th, td{border:1px solid #eee;vertical-align:middle;padding:5px;text-align:center;color:#666;}
+table table td{padding:0;border:0 none;line-height:20px;}
+th{text-align:center;background:#EFF7FD;white-space:nowrap;line-height:28px;}
+td a{display:inline-block;margin:0 3px;}
+th a.btn-prev,
+th a.btn-next{display:inline;margin:0 10px;font-weight:normal;}
+th a.btn-prev{float:left;}
+th a.btn-next{float:right;}
+table tr:hover td{background:#f6fdfd;}
+
+#filter{border:1px solid #CCC;}
+#filter .filter{width:100px;text-align:center;border-right:1px solid #CCC;}
+#filter td{border:0 none;line-height:20px;}
+#filter input.text{padding:4px 5px;width:200px;color:#999;}
+#filter select{padding:2px;}
+#filter label{margin-right:10px;}
+#filter label input{vertical-align:middle;margin-right:2px;}
+
+.renewed{border:1px solid #ddd;background:#f6f6f6;}
+.renewed h3{border-bottom:1px solid #ddd;text-align:center;height:28px;line-height:28px;background:#eee;}
+.renewed ul{padding:5px 5px 0 5px;}
+.renewed ul li{height:30px;line-height:30px;border-bottom:1px dashed #ddd;color:#777;padding:0 10px;}
+.renewed ul li span{margin-right:10px;}
+
+/* 分页码 */
+.mod-pages{float:right;clear:both;overflow:hidden;position:relative;}
+.mod-pages .mod-bd{float:left;position:relative;left:50%;border:0 none;}
+.mod-pages a,
+.mod-pages span{float:left;display:inline;width:auto;position:relative;right:50%;white-space:nowrap;padding:0 8px;margin:2px;font-size:14px;line-height:24px;border:1px solid #d8d8d8;background-color:#fff;}
+.mod-pages a:hover{text-decoration:none;background-color:#2aa0d0;color:#FFF;}
+.mod-pages a.current{font-weight:bold;background-color:#2aa0d0;color:#FFF;}
+.mod-pages a[class="prev"],.mod-pages a[class="next"]{font-family:sans-serif;}
+
+/*
+  布局
+*/
+#section{width:100%;zoom:1;position:relative;background:url(aside.png) repeat-y -10px 0;}
+#auto-con{width:100%;zoom:1;position:relative;padding-top:20px;}
+#auto-con .l{padding:0 280px 0 10px;}
+#auto-con .r{width:250px;position:absolute;right:10px;top:20px;}
+#header{width:100%;height:100px;background-color:#EFF7FD;border-bottom:1px solid #DDD;position:relative;background-color:#08c;border-bottom:1px solid #def;}
+#header h1{padding-left:20px;line-height:100px;font-size:20px;color:#fff;text-shadow:0 0 2px #333;}
+#header .welcome{color:#eee;height:20px;line-height:20px;padding:10px 10px 0;position:absolute;top:10px;right:20px;}
+#header .welcome a{margin-left:10px;color:#fff;}
+#header .welcome a:hover{color:#fff;text-decoration:underline;}
+/*search*/
+#search{height:30px;background:#b8dbfe;padding:5px 20px 0 20px;text-align:right;}
+/* aside */
+#aside{position:absolute;left:0;top:0;width:169px;font-size:14px;}
+#aside .navtree li div{height:30px;line-height:30px;color:#777;background:#def;font-weight:700;padding-left:20px;border-top:1px solid #cedeed;}
+#aside .navtree li ul{margin-bottom:10px;}
+#aside .navtree li ul li{padding-left:30px;height:25px;line-height:25px;}
+#aside .navtree li ul li.hover{background:#e9f4fe;}
+#aside .navtree li ul li.hover a{color:#f70;}
+
+
+/* main */
+#main{overflow:hidden;padding:10px 20px 20px 190px;font-size:14px;}
+#main .hd{padding-top:30px;line-height:25px;border-bottom:2px solid #eee;background:#f7f7f7;padding:8px 20px;overflow:hidden;zoom:1;}
+#main .hd h3{font-size:16px;font-weight:700;margin-right:20px;float:left;}
+#main .ft{padding:20px 0;}
+#main .nav{width:100%;zoom:1;}
+#main .nav a{float:left;display:inline-block;padding:0 15px;height:30px;line-height:30px;border:1px solid #DDD;margin:0 10px 0 0;}
+#main .nav a:hover {border-color:#0F87CC;color:#0F87CC;}
+#main .nav a.current{background-color:#0F87CC;border-color:#0F87CC;color:#FFF!important;}
+
+/*章节管理*/
+.section-list li{width:100px;line-height:28px;float:left;margin-right:10px;}
+.section-list li a{margin-right:5px;}
+
+/*弹出层*/
+.pop-box{width:280px;border:1px solid #ddd;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 0 5px 0 #999;-moz-box-shadow:0 0 5px 0 #999;box-shadow:0 0 5px 0 #999;}
+.pop-box .pop-box-hd{background:#f6f6f6;border-bottom:1px solid #ddd;height:30px;line-height:30px;padding:0 10px;font-weight:700;}
+
+/*分类管理*/
+.sort{border-bottom:1px dashed #ddd;padding:10px;margin-bottom:10px 5;line-height:25px;}
+.sort h4{height:28px;line-height:28px;font-weight:700;}
+.sort p a{display:inline-block;margin-right:15px;}
+
+.attention-list{border-bottom:1px dashed #ddd;padding:20px 0 10px 18px;margin-bottom:20px;overflow:hidden;zoom:1;}
+.attention-list li{width:190px;height:120px;float:left;margin:0 13px 10px 0;text-align:center;}
+.attention-list li img{margin-bottom:10px;}
+
+#crumbs{height:24px;line-height:14px;font-size:12px;font-family:\5b8b\4f53;color:#999;}
+.red{color:#f00;}
+.green{color:#3c0;}
+.purple{color:#f0c;}
+.yellow{color:#FC0;}
+
+.pop-box{ display:none;}
+.pam{background:#FFFFFF}
+.mbm{ color:#000000;}

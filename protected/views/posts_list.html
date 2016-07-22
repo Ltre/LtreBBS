@@ -1,0 +1,38 @@
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th><span>&nbsp;</span></th>
+			<th><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主题</span></th>
+			<th><span>发表时间</span></th>
+		</tr>
+	</thead>
+	<tbody>
+
+		<{foreach $posts_list as $pl}>
+		<tr>
+			<td class="avatar"><img src="http://avatar.csdn.net/2/D/4/1_mecho.jpg" width="35" height="35"/><br/><{$pl.nickname}></td>
+			<td class="titlez"><span idz="<{$pl.id}>"> <{$pl.title}> </span></td>
+			<td><span> <{$pl.create_time}> </span></td>
+		</tr>
+		<{/foreach}>
+	
+		<!-- 此段即将删除 -->
+		<{section name=loop loop=0}>
+		<tr>
+			<td class="avatar"><img src="http://avatar.csdn.net/2/D/4/1_mecho.jpg" width="35" height="35"/><br/>用户名</td>
+			<td class="titlez"><span idz="1">标题标题标题标题标题标题标题标题标题标题标题</span></td>
+			<td><span>1分钟前</span></td>
+		</tr>
+		<{/section}>
+		
+	</tbody>
+</table>
+
+
+<div class="mod-pages" style="overflow:visible;">
+	<{page page=$page r='posts/list'}>
+</div>
+
+
+<script type="text/javascript" src="static/js/posts-list.js"></script>
+<link rel="stylesheet" href="static/css/posts-list.css">

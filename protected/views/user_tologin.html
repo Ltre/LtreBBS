@@ -1,0 +1,49 @@
+<form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label" for="username">登录名</label>
+    <div class="controls">
+      <input type="text" id="username" placeholder="username">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="password">密码</label>
+    <div class="controls">
+      <input type="password" id="password" placeholder="">
+    </div>
+  </div>
+  <div class="control-group">
+    <div class="controls">
+      <button type="button" class="btn btn-inverse" id="toreg">去注册</button>
+      <button type="button" class="btn offset1" id="login">登录</button>
+    </div>
+  </div>
+</form>
+
+
+<script type="text/javascript"> 
+$(function(){
+	
+	$('#toreg').click(function(){
+		$.post('?r=user/toreg',function(data){
+			$('#left-content').html(data);
+		});
+	});
+	
+	
+	$('#login').click(function(){
+		var username = $('#username').val();
+		var password = $('#password').val();
+		if(''===username || ''===password) return false;
+		var params = {'username':username, 'password':password};
+		$.post('?r=user/login', params, function(json){
+			if('success'===json.code){
+				location.href='./';
+			}else{
+				alert(json.msg);
+			}
+		}, 'json');
+	});
+	
+});
+</script>
+

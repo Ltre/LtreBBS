@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+
+#left-content{
+	background: #dddddd;
+	height: 850px;
+}
+
+#right-sidebar{
+	background: silver;
+	height: 850px;/*720*/
+}
+
+#tags{
+	margin-top: 30px;
+}
+
+.scrollspy{
+	height: 200px;
+	overflow: auto;
+	position: relative;
+}

@@ -1,0 +1,39 @@
+
+<link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="static/css/posts_new.css" type="text/css">
+<!-- <script src="static/bootstrap/js/bootstrap-wysiwyg.js"></script> -->
+<script src="static/js/bootstrap-wysiwyg.js"></script>
+<!-- <script src="https://mindmup.s3.amazonaws.com/lib/jquery.hotkeys.js" type="text/javascript"></script> -->
+
+
+<style>
+	#editor {overflow:scroll; max-height:300px}
+</style>
+
+
+<div class="container">
+	<div class="hero-unit">
+		<h1>
+			Bootstrap富文本编辑器 <br /> <small>Bootstrap框架专用富文本编辑器 - By <a
+				href="http://www.gbtags.com/gb/site/terryli.htm">terry</a></small>
+		</h1>
+		<hr />
+		<div id="alerts"></div>
+		
+		<div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
+			 <a data-edit="bold">B</a>
+			 <a data-edit="fontName Arial">字体</a>
+		</div>
+	
+		<div id="editor">输入内容&hellip;</div>
+	</div>
+</div>
+
+
+
+
+<script>
+  $(function(){
+	$('#editor').wysiwyg();
+  });
+</script>

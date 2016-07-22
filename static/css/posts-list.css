@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+
+tbody>tr>td>span{
+	bottom: 0px;
+	font-size: 15px;
+	line-height: 55px;	
+}
+
+/*主题列表的头像列*/
+.avatar{
+	
+}
+
+/*主题列表的标题列*/
+.titlez{
+	text-shadow: -1px 2px 3px #ffb69a;
+	position: relative;
+}
+.titlez span{
+	cursor: pointer;
+}
+
+
+
+/* 分页码 */
+.mod-pages{float:right;clear:both;overflow:hidden;position:relative;}
+.mod-pages .mod-bd{float:left;position:relative;left:50%;border:0 none;}
+.mod-pages a,
+.mod-pages span{float:left;display:inline;width:auto;position:relative;right:50%;white-space:nowrap;padding:0 8px;margin:2px;font-size:14px;line-height:24px;border:1px solid #d8d8d8;background-color:#fff;}
+.mod-pages a:hover{text-decoration:none;background-color:#2aa0d0;color:#FFF;}
+.mod-pages a.current{font-weight:bold;background-color:#2aa0d0;color:#FFF;}
+.mod-pages a[class="prev"],.mod-pages a[class="next"]{font-family:sans-serif;}

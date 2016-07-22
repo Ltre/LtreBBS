@@ -1,0 +1,21 @@
+/* body{
+	color: transparent;
+	text-shadow: #111 0 0 5px;
+} */
+body {
+	background: url("../img/bg.jpg");
+}
+
+#container {
+	margin-top: 70px;
+	font-family: 微软雅黑;
+}
+
+div {
+	border-radius: 6px;
+}
+
+.pad {
+	padding: 15px;
+}
+
