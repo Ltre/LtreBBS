@@ -21,14 +21,14 @@ if(DEVELOPMENT) {
 		    
 				
 }else { //线上配置
-	define('DEBUG',true);
+	define('DEBUG',false);
 	$_configs = array(
 					'mysql'=>array(
-						'MYSQL_HOST'=>'sqld.duapp.com',
-						'MYSQL_PORT'=>4050,
-						'MYSQL_USER'=>'gurzoQmUf010iyL24l72n3jB',
-						'MYSQL_PASS'=>'CwG4gTqSRAN5yZVzkY2XnomG3DcmKBsf',
-						'MYSQL_DB'=>'dTIwxfQOtsFegyoxsCJh',
+						'MYSQL_HOST'=>'127.0.0.1',
+						'MYSQL_PORT'=>3306,
+						'MYSQL_USER'=>'ltrebbs',
+						'MYSQL_PASS'=>'oi5JhUyaKKkZQmOB',
+						'MYSQL_DB'=>'ltrebbs',
 						'MYSQL_CHARSET'=>'UTF8',
 					),
 				);
