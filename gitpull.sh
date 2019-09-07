@@ -17,10 +17,10 @@ fi
 mv /home/wwwroot/ltrebbs /home/wwwroot/ltrebbs.trash;
 cp /home/wwwsrc/ltrebbs -r /home/wwwroot/ltrebbs;
 rm /home/wwwroot/ltrebbs/.git -rf
-rm /home/wwwroot/ltrebbs/core/data -rf
-cp -r /home/wwwroot/ltrebbs.trash/core/data /home/wwwroot/ltrebbs/core/
-chmod -R 767 /home/wwwroot/ltrebbs/core/data;
-chmod +x /home/wwwroot/ltrebbs/core/setting/gitpull.sh;
+rm /home/wwwroot/ltrebbs/protected/data -rf
+cp -r /home/wwwroot/ltrebbs.trash/protected/data /home/wwwroot/ltrebbs/protected/
+chmod -R 767 /home/wwwroot/ltrebbs/protected/data;
+chmod +x /home/wwwroot/ltrebbs/gitpull.sh;
 rm -f -r /home/wwwroot/ltrebbs.trash;
 
 cd /home/wwwroot/ltrebbs
