@@ -14,6 +14,14 @@ if [ ! -d "/home/wwwroot/ltrebbs" ]; then
     mkdir /home/wwwroot/ltrebbs;
 fi
 
+if [ ! -d "/home/wwwroot/ltrebbs/protected" ]; then
+    mkdir /home/wwwroot/ltrebbs/protected;
+fi
+
+if [ ! -d "/home/wwwroot/ltrebbs/protected/data" ]; then
+    mkdir /home/wwwroot/ltrebbs/protected/data;
+fi
+
 mv /home/wwwroot/ltrebbs /home/wwwroot/ltrebbs.trash;
 cp /home/wwwsrc/ltrebbs -r /home/wwwroot/ltrebbs;
 rm /home/wwwroot/ltrebbs/.git -rf
@@ -23,6 +31,7 @@ chmod -R 767 /home/wwwroot/ltrebbs/protected/data;
 chmod +x /home/wwwroot/ltrebbs/gitpull.sh;
 rm -f -r /home/wwwroot/ltrebbs.trash;
 
+cd /home/wwwroot
 cd /home/wwwroot/ltrebbs
 
 service nginx restart
