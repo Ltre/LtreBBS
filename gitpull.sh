@@ -41,7 +41,6 @@ chmod +x /home/wwwroot/ltrebbs/gitpull.sh;
 rm -f -r /home/wwwroot/ltrebbs.trash;
 
 cd /home/wwwroot
-ll /home/wwwroot/ltrebbs
 
 service nginx restart
 service php-fpm reload
